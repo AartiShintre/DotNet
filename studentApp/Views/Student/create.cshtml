@@ -1,0 +1,13 @@
+@model StudentApp.Models.Student
+
+<h2>Add Student</h2>
+
+<form method="post">
+    Name: <input asp-for="Name" /><br />
+    Marks: <input asp-for="Marks" /><br />
+    Email: <input asp-for="Email" /><br />
+
+    <button type="submit">Save</button>
+</form>
+
+<div asp-validation-summary="All"></div>
